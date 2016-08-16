@@ -1,0 +1,10 @@
+Chapter I
+Computer Obliteracy
+
+The may tell us facts, but the don't inform us. They may guide us with precisition but they don't guide us where we want to go. The flight computer on Flig 965 could easily have told the pilots that "ROMEO" was not an appropiate fix for their approach to Calí.
+
+
+The high-tech industry has inadvertenly put programmers and engineers in charge, so their hard-to-use engineering  culture dominates. Despite appearances, bussines executives are simply not the ones in control of the high-tech industry. It is the engineers who are running the show. In our rush to accept the many benefits of the silicon chip, we abdicated our resposabilites. We have let the inmates run the asylum.
+
+
+Programmer aren't evil.They work hard to make their software easy to use. Unfortunately their frame of reference is themselves, so they only make it easy to use for other software engineering, not for normal human beings.

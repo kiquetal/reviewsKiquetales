@@ -1,0 +1,10 @@
+Chapter2 Cognitie Friction
+
+qMost software is designed by accident.
+Tradition is the strongest influence in the design of all of these media. The biggest difference is that the builder-designer of the hut will also be its  primary occupant, whereas programmers typically don't use the software they design.
+
+Interaction versus Interface Design
+The consequence of isolating design at the interface level is that it licenses programmers to reason like "I can code as I please because an 'interface' will be slapped on after I'm done'.It pospone design until after programming, when it is too late.
+
+Interaction designers, think first conceptually, then in terms of behavior, and last in term of interface.
+
