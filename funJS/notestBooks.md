@@ -36,5 +36,25 @@
     
 *Inmutability*
 
-    The object never changes where it's assigned.
+    The object never changes when it's assigned.
 
+## Chapter II
+
+    The state of a program can be defined as a snapshot of the data stored in all of its objects at 
+    any moment in the future
+    
+    Lenses also known as functional interfaces, are functional programming's solution to accesing and 
+    immutably manipulating attributes of stateful data types.
+    
+    var person=new Person('Alonso','Church','4434343');
+    var lastnamelens=R.lenseProp('lastname');
+    
+    R.view(lastnameLens,person);
+    
+    var new Person=R.set(lastnameLens,'Mourning',person);
+    
+    newPerson.lastname;
+    person.lastname;
+    
+    Utilizing the "copy on write strategy".
+    Preserving the original instance
