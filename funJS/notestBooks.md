@@ -45,7 +45,9 @@
     
     Lenses also known as functional interfaces, are functional programming's solution to accesing and 
     immutably manipulating attributes of stateful data types.
-    
+
+### Examples Lens
+
     var person=new Person('Alonso','Church','4434343');
     var lastnamelens=R.lenseProp('lastname');
     
@@ -56,5 +58,16 @@
     newPerson.lastname;
     person.lastname;
     
+      
+### CopyOnWrite Strategy
+
     Utilizing the "copy on write strategy".
-    Preserving the original instance
+    Preserving the original instance.
+    
+
+### Call vs Apply
+
+    Call vs Apply
+    Call accepts an argument list, and apply accepts array.
+    
+    
