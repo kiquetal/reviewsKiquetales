@@ -5,10 +5,10 @@
 
 ## Concepts 
 
-    ..- Declarative programming
-    ..- Pure functions
-    ..- Referential transparency
-    ..- Inmutability.
+..* Declarative programming
+..* Pure functions
+..* Referential transparency
+..* Inmutability.
     
     
 *Declarative programming*
@@ -35,3 +35,4 @@
     result on the same input, it's said to be referentially transparent.
     
     
+
