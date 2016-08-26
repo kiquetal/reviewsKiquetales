@@ -5,14 +5,14 @@
 
 ## Concepts 
 
-    ... Declarative programming
-    ... Pure functions
-    ... Referential transparency
-    ... Inmutability.
+    ..- Declarative programming
+    ..- Pure functions
+    ..- Referential transparency
+    ..- Inmutability.
     
     
-** Declarative programming **
-    
+*Declarative programming*
+
     It's a paradigm that express a set of operations without revealing how they're
     implemented or how data flows through them.
     Imperative programming treats a computer program as merely a sequence of top-to-bottom
@@ -20,7 +20,7 @@
     
 
 
-** Pure functions **
+*Pure functions*
 
     It depends only on the input provided and not on any hidden or external state
     that may change during its evaluation or between calls.
@@ -29,7 +29,7 @@
     parameter passed by reference.
     
     
-** Referential transparency **
+*Referential transparency*
 
     Is a more formal way of defining a pure function. If a function consistently yields the same
     result on the same input, it's said to be referentially transparent.
