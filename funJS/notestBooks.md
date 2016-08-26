@@ -34,5 +34,7 @@
     Is a more formal way of defining a pure function. If a function consistently yields the same
     result on the same input, it's said to be referentially transparent.
     
-    
+*Inmutability*
+
+    The object never changes where it's assigned.
 
