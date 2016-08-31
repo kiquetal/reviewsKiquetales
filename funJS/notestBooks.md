@@ -123,14 +123,15 @@ OOP pattern that allows multiple methods to be called in a single statement.
     represented by functions that execute with the condition that their inputs and outputs be 
     compatible in two ways:
     
-    ..* Type
+  ..* Type
         The type returned by one function must match the argument type of a receiving function.
         
-    ..* Arity
+  ..* Arity
         A receiving function must declare at least one parameter in order to handle the value
         returned from a preceding function call.
         
-    
+#### Definitions
+  
     Formally speaking, two functions f and g are type-compatible if the output of *f* has a
     type equivalent to the set of inputs of g.
     Arity can be defined as the number of arguments a function accepts, it's also referred to as the
@@ -142,4 +143,4 @@ OOP pattern that allows multiple methods to be called in a single statement.
     Currying is a technique that converts a multivariable function into a stepwise sequence
     of unary functions by suspending or 'procrastinating' its execution until all arguments
     have been provided, which could happen later.
-    
+     
