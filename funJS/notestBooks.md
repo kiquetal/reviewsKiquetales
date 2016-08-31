@@ -123,10 +123,10 @@ OOP pattern that allows multiple methods to be called in a single statement.
     represented by functions that execute with the condition that their inputs and outputs be 
     compatible in two ways:
     
-  ..* Type
+  * Type
         The type returned by one function must match the argument type of a receiving function.
         
-  ..* Arity
+  * Arity
         A receiving function must declare at least one parameter in order to handle the value
         returned from a preceding function call.
         
