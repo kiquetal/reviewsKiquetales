@@ -144,3 +144,21 @@ OOP pattern that allows multiple methods to be called in a single statement.
     of unary functions by suspending or 'procrastinating' its execution until all arguments
     have been provided, which could happen later.
      
+   It's useful when
+   * Emulating function interfacces.
+   
+   * Implementing reusable, modular functions templates.
+   
+#### Differences between Partials and currying
+
+     Currying generates nested unary functions at each partial invocation. Internally, the final
+     result is generated from the step-wise composition of these unary functions. Also, variations
+     of curry allow you to partially evaluate a number of arguments;therefore, it gives you
+     complete control over when and how evalution take place.
+     
+     Partial application binds a function's arguments to predefined values and generates a new
+     function of fewer arguments. The resulting function contains the fixed parameters in its 
+     closure and is completely evaluated on the subsequent call.
+     
+     
+ 
