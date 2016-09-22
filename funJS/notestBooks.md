@@ -160,5 +160,94 @@ OOP pattern that allows multiple methods to be called in a single statement.
      function of fewer arguments. The resulting function contains the fixed parameters in its 
      closure and is completely evaluated on the subsequent call.
      
+    
+    function filter(arr, predicate)
+{
+
+    let idx=-1,
+    len=arr.length;
+     result=[];
+     while(++idx<len)
+     {
+         let value=arr[idx];
+         if(predicate(value,idx,this)){
+         result.push(value);
+         }
      
- 
+     }
+    return result;
+
+}
+
+    Tuples offer more advantages:
+        
+        Inmutable
+        Once created you can't change a tuple's internal contents.
+        Avoid creating ad hoc types.
+        Tuples can relatae values that may have no relationship at all
+        to each other. So defining and instantiating new types solely
+        for grouping data together makes your model unnecesarily convoluted.
+        Avoid creating heterogenous arrays
+        Working with arrays contining different types of elements is hard
+        because it leads to writting code filled with lots of defensive type checks
+        Traditionally, arrays are meant to store objects of the same type.
+        
+        
+    So unlike currying, calling consoleLog with just one argument won't return a new function
+    and will instead evaluate with the last one set to undefined.But you can continue 
+    applying partial arguments to consoleLog by using _partial again.
+     
+    Example partial
+    
+    String.prototype.first=_.partial(String.prototype.substring,0,_);
+    'Functional Programming'.first(3);
+    
+    const Scheduler=(function(){
+        const delayedFn=_.bind(setTiemout,undefined,_,_)
+        
+        return{
+        delay5:_.partial(delayedFn,_,5000),
+        delay10:_.partial(dellayedFn,_,10000)
+        }
+    
+    })();
+    
+    Scheduler.delay5(function(){
+      console.log('Executing After 5 seconds');
+    });
+    
+
+    Functional composition: separating description from evaluation.
+    
+    Functional composition is a process used to group together complex behavior that has been
+    broken into simpler tasks. I defined it briefly in chapter I, and now I'll explain it in detail.
+    Let's go over a quick example that uses Rambda's R.compose to combine two pure functions:
+    
+    const str='We can only see a short distance ahead but we can see plenty there
+    that needs to be done';
+    cons explode=(str)=>str.split(/\s+/);
+    const count=(arr)=>arr.length;
+    
+    const countWords=R.compose(count,explode);
+    
+    countWords(str);
+    
+    The result of composition is another function that waits to be called
+    with its respective argument: the argument to countWords.
+    Separating a function's description from its evaluation.
+    
+    Using compose
+    
+    const trim = (str) => str.replace(/^\s*|\s*$/g,'')
+    const normalize=(str)=>str.replace(/\-/g,'');
+    const validateLength=(param,str)=>str.length==param;
+    const checkLengthSsn=_.partial(validLenght,9);
+    
+    const cleanInput=R.compose(normalize,trim);
+    const isValidSSn=R.compose(checkLengthSsn,cleanInput);
+    
+    `Entire program can be built from the combination of other side effect-free, pure program or modules`
+    
+    
+    
+     
