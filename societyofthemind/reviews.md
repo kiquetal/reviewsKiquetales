@@ -63,9 +63,12 @@ than we thought we did.
 It's harmful, though when naming leads the mind to think that names alone bring meaning close.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #### 2.4 Holes and Parts
 
 
+=======
+>>>>>>> 283f4a567183ffe49820e0a958a8de701810cbfc
 =======
 >>>>>>> 283f4a567183ffe49820e0a958a8de701810cbfc
     
